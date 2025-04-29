@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset = "UFT-8">
+        <title>My Page</title>
+        <style>
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #1b2735 0%, #090a0f 100%);
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  color: white;
+}
+
+.profile-container {
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 1s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: bisque;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+ul {
+  text-align: left;
+  margin: 10px auto;
+  display: inline-block;
+  font-size: 18px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+  background-color: #357ab8;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+            </style>
+        </head>
+
+<body>
+    <div class = "stars"></div>
+    <div class = "stars2"></div>
+    <div class = "stars3"></div>
+
+
+
+            <div class= "profile-container">
+            <h1>This is Winter's page</h1>
+
+            <img src="My Photo 2.jpg" alt="Photo" width = "200">
+
+            <p>Hello!
+            
+                <h2>My hobbies: </h2>
+                <ul>
+                    <li>Coding</li>
+                    <li>Soccer</li>
+                    <li><a href="travel.html">Traveling</a></li>
+
+                </ul>
+
+                <p>Welcome to My Page! This is my LinkedIn Page</p>
+                <br>
+                <a href="https://www.linkedin.com/in/zhenyu-dai-683475328" target="_blank">My LinkedIn Page</a>
+
+                </div>
+
+                </body>
+            </html>
