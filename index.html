@@ -1,112 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset = "UFT-8">
-        <title>My Page</title>
-        <style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is Winter's Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
 
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, #1b2735 0%, #090a0f 100%);
-  font-family: "Segoe UI", "Helvetica", sans-serif;
-  color: white;
-}
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
 
-.profile-container {
-  background-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
-  max-width: 500px;
-  width: 90%;
-  text-align: center;
-  animation: fadeIn 1s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2)
-}
+    header {
+      background-color: #2d4a62;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-bottom: 20px;
-}
+    header h1 {
+      font-size: 24px;
+    }
 
-h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: bisque;
-}
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-h2 {
-  font-size: 22px;
-  margin-top: 20px;
-}
+    .hero {
+      position: relative;
+      background: url('MainPage.jpg') center/cover no-repeat;
+      height: 400px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
 
-ul {
-  text-align: left;
-  margin: 10px auto;
-  display: inline-block;
-  font-size: 18px;
-}
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(1.05);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
 
-a {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #4a90e2;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s, transform 0.3s;
-}
+    .intro-section {
+      background: white;
+      padding: 40px;
+      text-align: center;
+    }
 
-a:hover {
-  background-color: #357ab8;
-  transform: translateY(-3px);
-}
+    .intro-section img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      border: 4px solid #2d4a62;
+    }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-            </style>
-        </head>
+    .intro-section h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
+    .intro-section p {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background: #fff;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #2d4a62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
 <body>
-    <div class = "stars"></div>
-    <div class = "stars2"></div>
-    <div class = "stars3"></div>
 
+  <header>
+    <h1>Winter's Page</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
+  <div class="hero"></div>
 
-            <div class= "profile-container">
-            <h1>This is Winter's page</h1>
+  <section class="intro-section">
+    <img src="myphoto.jpg" alt="Winter's Photo">
+    <h2>Hello!</h2>
+    <p>My hobbies:</p>
+  </section>
 
-            <img src="myphoto.jpg" alt="Photo" width = "200">
+  <section class="card-container">
+    
+    <a class="card" href="soccer.html">
+      <img src="soccer.jpg" alt="Soccer">
+      <div class="card-content">
+        <h3>Soccer</h3>
+        <p>See how I stay active and enjoy team play.</p>
+      </div>
+    </a>
+    <a class="card" href="travel.html">
+      <img src="travel.jpg" alt="Traveling">
+      <div class="card-content">
+        <h3>Traveling</h3>
+        <p>Discover the places I've been and love.</p>
+      </div>
+    </a>
+    <a class="card" href="foodie.html">
+      <img src="foodie.jpg" alt="Foodie">
+      <div class="card-content">
+        <h3>Foodie</h3>
+        <p>Explore the delicious foods I've tried and loved.</p>
+      </div>
+    </a>
+  </section>
 
-            <p>Hello!
-            
-                <h2>My hobbies: </h2>
-                <ul>
-                    <li>Coding</li>
-                    <li>Soccer</li>
-                    <li><a href="travel.html">Traveling</a></li>
+  <section class="intro-section">
+    <a class="button" href="https://www.linkedin.com/in/zhenyu-dai-683475328/" target="_blank">My LinkedIn Page</a>
+  </section>
 
-                </ul>
+  <footer>
+    &copy; 2025 Winter's Page | All rights reserved.
+  </footer>
 
-                <p>Welcome to My Page! This is my LinkedIn Page</p>
-                <br>
-                <a href="https://www.linkedin.com/in/zhenyu-dai-683475328" target="_blank">My LinkedIn Page</a>
-
-                </div>
-
-                </body>
-            </html>
+</body>
+</html>
