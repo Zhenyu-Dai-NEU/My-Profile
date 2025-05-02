@@ -26,6 +26,17 @@
       line-height: 1.3;
     }
 
+    h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      color: #222;
+      text-align: left;
+      margin: 40px auto 20px;
+      max-width: 800px;
+      padding: 0 20px;
+      font-size: 28px;
+    }
+
     header .subtitle {
       font-size: 24px;
       color: #555;
@@ -41,10 +52,31 @@
       margin-top: 10px;
     }
 
-    .soccer-MainImage {
+    .soccer-MainImage, .soccer-highschool1, .soccer-spur, .soccer-universityteam {
       display: block;
       max-width: 800px;
       margin: 30px auto;
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
+
+    .image-row img {
+      flex: 1 1 45%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
       border-radius: 8px;
     }
 
@@ -75,11 +107,19 @@
       color: #000;
     }
 
-    .section-heading {
-      font-size: 28px;
-      font-weight: bold;
-      margin-top: 40px;
-      color: #222;
+    .four-grid-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .four-grid-section img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
     }
 
     footer {
@@ -103,10 +143,54 @@
   <div class="article-section">
     <p><span class="dropcap">I</span>t all began with a simple line from my best friend in high school: 'Hey, want to go play some football?' I followed him to the pitch, and there, I kicked a football for the very first time in my life.</p>
 
-    <p>From defender to midfield, now I prefer to be in attacker in a team. Soccer has helped me stay active and make many new friends. Most importantly, it has become one of the most meaningful ways for me to connect with others. From player to manager to team, I have to admit that I have fallen in love with football<p>
+    <p>From defender to midfield, now I prefer to be in attacker in a team. Soccer has helped me stay active and make many new friends. Most importantly, it has become one of the most meaningful ways for me to connect with others.</p>
 
-    <div class="section-heading">How to start playing soccer in my high school?</div>
-    <p>At the beginning of my football journey, I was assigned to play as a defender—partly due to the stereotype that newcomers should start there, while the more glamorous roles of striker and midfielder were thought to be for the gifted and the physically strong. After playing as a defender for a while, I realized that I was capable of passing the ball to my teammates under pressure, rather than simply clearing it away</p>
+    <p>I’m truly grateful for soccer—it gave a classic nerd like me the chance to be active and make friends, instead of being stuck in an endless cycle of studying and reading. Unlike American high schools, where students often finish classes early to take part in various activities, Chinese high schools are packed with what people call sweat and hard work, marked by intense competition and a relentless drive to succeed. Even so, as one of the top high schools in the city, we were guaranteed at least one hour of physical activity each day. Encouraged by the soccer culture among my friends and their invitations, I spent nearly every one of those hours on the pitch—getting exercise and, at the same time, connecting with more of my classmates.</p>
+
+    <h2>What's the start of playing soccer in my high school?</h2>
+    <p>At the beginning of my football journey, I was assigned to play as a defender—partly due to the stereotype that newcomers should start there, while the more glamorous roles of striker and midfielder were thought to be for the gifted and the physically strong. After playing as a defender for a while, I realized that I was capable of passing the ball to my teammates under pressure, rather than simply clearing it away.</p>
+  </div>
+
+  <img class="soccer-MainImage" src="soccer-highschool.jpg" alt="Soccer High School">
+  <div class="image-caption">My High School Soccer Friends</div>
+
+  <div class="article-section">
+    <p>My friends gradually noticed my potential and encouraged me to play the most crucial position on the field: defensive midfielder. I had decent passing skills and some defensive experience, and although I wasn’t very tall at the time, I had enough stamina to last the full 90 minutes. With that lineup, we went on to play against amateur teams from other high schools across the city—and remained undefeated.</p>
+
+    <p>After graduating from high school, I was admitted to university, and to celebrate, my father arranged for my uncle to take me on a trip to the UK. It was during that trip that I was lucky enough to watch my first top football match—Tottenham Hotspur vs. Aston Villa—where I witnessed a goal from Harry Kane. Since then, I’ve dreamed of one day visiting Camp Nou to see my favorite team, FC Barcelona, in person.</p>
+
+    <img class="soccer-spur" src="soccer-spur.jpg" alt="Soccer in Tottenham-spur">
+    <div class="image-caption">Watching the game in White Hart Lane</div>
+
+    <h3>My soccer life in undergraduate</h3>
+    <p>In my first month at university, I reached out to a friend from the same college and asked if he could invite me to train with the university’s soccer team. That’s how my journey with university soccer began.</p>
+
+    <p>However, the teammates I was competing with had been professionally trained in football since childhood. The team environment was filled with competition and pressure, and I remained on the bench most of the time. By then, my height was no longer ideal for playing in midfield, but relying on my past experience, I still tried to contribute in that role. Despite months of intense training—three months, countless sessions—I only played in two matches. The lack of opportunity left me frustrated, and eventually, I decided to leave the university team.</p>
+
+    <p>Fortunately, I kept a photo of the team as a memory of my time there.</p>
+
+    <img class="soccer-universityteam" src="soccer.jpg" alt="Team in University">
+    <div class="image-caption">The photo of my university team</div>
+
+    <p>Although I didn’t make it on the university team, I still found my place on the faculty team. Each year, the school held 11-a-side and 5-a-side tournaments. As a freshman, I started out in the second team, where I began to prove myself. Over time, I secured a spot in the starting lineup and helped mentor many younger players. Although our best result was only reaching the semifinals, it was undoubtedly one of the most exciting and fulfilling parts of my undergraduate life.</p>
+
+    <div class="four-grid-section">
+      <img src="soccer-fal1.jpg" alt="Faculty 1">
+      <img src="soccer-fal2.jpg" alt="Faculty 2">
+      <img src="soccer-fal3.jpg" alt="Faculty 3">
+      <img src="soccer-fal4.jpg" alt="Faculty 4">
+    </div>
+    <div class="image-caption">My Memory in faculty team</div>
+
+    <h4>Keep on my master soccer story</h4>
+
+    <p>I was admitted to Northeastern University to begin my master’s degree. Here, soccer once again became a bridge for connection—it helped me meet friends from different cultural backgrounds, and together we played in many fun and competitive matches. My journey with soccer in graduate school is still ongoing. And being on the East Coast brings me closer to Europe, giving me the chance to finally watch more games and visit Barcelona and see the legendary team I’ve admired since my sixteen.</p>
+
+    <div class="image-row">
+      <img src="soccer-Arsenal1.jpg" alt="Left Image">
+      <img src="soccer-Arsenal2.jpg" alt="Right Image">
+    </div>
+    <div class="image-caption">EFL Quarterfinal at Emirate Stadium</div>
   </div>
 
   <footer>
