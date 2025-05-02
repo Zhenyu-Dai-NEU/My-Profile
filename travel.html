@@ -1,120 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Travel Gallery</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      background: #f0f0f0;
+      background-color: #f0f0f0;
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 900px;
+      margin: auto;
     }
 
-    .photo-container {
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       transition: transform 0.3s ease;
-      position: relative;
     }
 
-    .photo-container:hover {
+    .gallery-item:hover {
       transform: translateY(-10px);
     }
 
-    .photo-container img {
+    .gallery-item img {
       width: 100%;
-      height: 100%;
+      height: 400px;
       object-fit: cover;
-      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     .caption {
-      text-align: center;
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 18px;
+      color: #e67e22;
       font-weight: bold;
-      color: #4a63e2; 
+      text-align: center;
     }
 
     @media (max-width: 600px) {
-      .photo-container {
-        width: 100%;
+      .gallery-item img {
         height: auto;
       }
     }
   </style>
 </head>
 <body>
-
   <h1>My Travel Moments</h1>
+
   <div class="gallery">
-    <div>
-      <a href="Paris.html" class="photo-container">
-        <img src="travel_pages/paris.jpg" alt="Paris-France">
-      </a>
+
+    <!--Europe-->
+    <div class="gallery-item">
+      <a href="Paris.html"><img src="travel_pages/Paris.jpg" alt="Paris" /></a>
       <div class="caption">Paris, France</div>
     </div>
-    <div>
-      <a href="Tokyo.html" class="photo-container">
-        <img src="travel_pages/tokyo.jpg" alt="Tokyo-Japan">
-      </a>
+
+    <div class="gallery-item">
+        <a href="London.html"><img src="travel_pages/London.jpg" alt="London" /></a>
+        <div class="caption">London, England</div>
+      </div>
+
+    <div class="gallery-item">
+        <a href="Iceland.html"><img src="travel_pages/Iceland.jpg" alt="Iceland" /></a>
+        <div class="caption">Iceland</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="Barcelona.html"><img src="travel_pages/Barcelona.jpg" alt="Barcelona" /></a>
+        <div class="caption">Barcelona, Spain</div>
+    </div>
+
+      <!--Asia-->
+    <div class="gallery-item">
+      <a href="Tokyo.html"><img src="travel_pages/Tokyo.jpg" alt="Tokyo" /></a>
       <div class="caption">Tokyo, Japan</div>
     </div>
-    <div>
-      <a href="Osaka.html" class="photo-container">
-        <img src="travel_pages/newyork.jpg" alt="Osaka-Japan">
-      </a>
+
+    <div class="gallery-item">
+      <a href="Osaka.html"><img src="travel_pages/Osaka.jpg" alt="Osaka" /></a>
       <div class="caption">Osaka, Japan</div>
     </div>
-    <div>
-      <a href="Italy.html" class="photo-container">
-        <img src="travel_pages/barcelona.jpg" alt="Italy">
-      </a>
-      <div class="caption">Florence, Italy</div>
-    </div>
-    <div>
-      <a href="London.html" class="photo-container">
-        <img src="travel_pages/london.jpg" alt="London-England">
-      </a>
-      <div class="caption">London, England</div>
-    </div>
-    <div>
-      <a href="Iceland.html" class="photo-container">
-        <img src="travel_pages/Iceland.jpg" alt="Iceland">
-      </a>
-      <div class="caption">Iceland</div>
-    </div>
-    <div>
-      <a href="Egypt.html" class="photo-container">
-        <img src="travel_pages/beijing.jpg" alt="Egypt">
-      </a>
-      <div class="caption">Cairo, Egypt</div>
-    </div>
-    <div>
-      <a href="Barcelona.html" class="photo-container">
-        <img src="travel_pages/seoul.jpg" alt="Barcelona-Spain">
-      </a>
-      <div class="caption">Barcelona, Spain</div>
-    </div>
-  </div>
 
+    <div class="gallery-item">
+        <a href="Hongkong.html"><img src="travel_pages/Hongkong.jpg" alt="Hongkong" /></a>
+        <div class="caption">Hongkong, China</div>
+      </div>
+
+      <div class="gallery-item">
+        <a href="Macau.html"><img src="travel_pages/Macau.jpg" alt="Macau" /></a>
+        <div class="caption">Macau, China</div>
+      </div>
+
+   
+    <!--Africa-->
+    <div class="gallery-item">
+      <a href="Cairo.html"><img src="travel_pages/Egypt.jpg" alt="Cairo" /></a>
+      <div class="caption">Egypt</div>
+    </div>
+
+    
+  </div>
 </body>
 </html>
